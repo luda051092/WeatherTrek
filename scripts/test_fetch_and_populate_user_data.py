@@ -23,8 +23,8 @@ class TestFetchAndPopulateUserData(unittest.TestCase):
 
         # Verify that the data is inserted into the User table
         users = User.query.all()
-        self.assertEqual(len(users), 1)  # Adjust based on the number of user entries in the mock data
-        self.assertEqual(users[0].user_id, 1)  # Adjust based on the mock data
+        self.assertEqual(len(users), 1)  # Adjust 
+        self.assertEqual(users[0].user_id, 1)  # Adjust 
 
     @patch('scripts.fetch_and_populate_user_data.requests.get')
     def test_fetch_and_populate_user_data_failure(self, mock_requests_get):
