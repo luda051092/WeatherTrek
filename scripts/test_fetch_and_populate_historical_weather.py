@@ -27,8 +27,8 @@ class TestFetchAndPopulateHistoricalWeather(unittest.TestCase):
 
         # Verify that the data is inserted into the HistoricWeather table
         historical_weather = HistoricWeather.query.all()
-        self.assertEqual(len(historical_weather), 1)  # Adjust based on the number of historical weather entries in the mock data
-        self.assertEqual(historical_weather[0].city_id, 1)  # Adjust based on the mock data
+        self.assertEqual(len(historical_weather), 1)  # Adjust 
+        self.assertEqual(historical_weather[0].city_id, 1)  # Adjust 
 
     @patch('scripts.fetch_and_populate_historical_weather.requests.get')
     def test_fetch_and_populate_historical_weather_failure(self, mock_requests_get):
