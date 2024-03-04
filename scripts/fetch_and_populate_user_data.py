@@ -17,7 +17,7 @@ def fetch_and_populate_user_data():
             user = User(
                 user_id=data['user_id'],
                 username=data['username'],
-                # Add more user-related fields as needed
+                
             )
             db.session.add(user)
 
