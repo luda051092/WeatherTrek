@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
               // Display error message on the page
               const errorMessageElement = document.createElement('p');
               errorMessageElement.textContent = 'Error fetching weather data. Please try again later.';
-              errorMessageElement.style.color = 'red'; // Optionally, style the error message
+              errorMessageElement.style.color = 'red'; 
               document.getElementById('weather-info').appendChild(errorMessageElement);
         });
 });
