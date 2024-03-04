@@ -11,10 +11,10 @@ class TestFetchAndPopulateCities(unittest.TestCase):
         mock_response.status_code = 200
         mock_response.json.return_value = [
             {
-                'name': 'City1',
-                'country': 'Country1',
+                'name': 'City',
+                'country': 'Country',
                 'population': 1000000,
-                'region': 'Region1',
+                'region': 'Region',
                 'latitude': 40.7128,
                 'longitude': -74.0060,
                 'elevation': 10.5
@@ -27,8 +27,8 @@ class TestFetchAndPopulateCities(unittest.TestCase):
 
         # Verify that the data is inserted into the City table
         cities = City.query.all()
-        self.assertEqual(len(cities), 1)  # Adjust based on the number of cities in the mock data
-        self.assertEqual(cities[0].name, 'City1')  # Adjust based on the mock data
+        self.assertEqual(len(cities), 1)  # Adjust 
+        self.assertEqual(cities[0].name, 'City')  # Adjust 
 
     @patch('scripts.fetch_and_populate_cities.requests.get')
     def test_fetch_and_populate_cities_failure(self, mock_requests_get):
