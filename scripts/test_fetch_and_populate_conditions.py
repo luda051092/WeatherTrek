@@ -23,8 +23,8 @@ class TestFetchAndPopulateConditions(unittest.TestCase):
 
         # Verify that the data is inserted into the WeatherCondition table
         conditions = WeatherCondition.query.all()
-        self.assertEqual(len(conditions), 1)  # Adjust based on the number of conditions in the mock data
-        self.assertEqual(conditions[0].condition_name, 'Clear')  # Adjust based on the mock data
+        self.assertEqual(len(conditions), 1)  # Adjust this
+        self.assertEqual(conditions[0].condition_name, 'Clear')  # Adjust this
 
     @patch('scripts.fetch_and_populate_conditions.requests.get')
     def test_fetch_and_populate_conditions_failure(self, mock_requests_get):
