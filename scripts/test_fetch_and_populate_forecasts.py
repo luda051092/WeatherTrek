@@ -28,8 +28,8 @@ class TestFetchAndPopulateForecasts(unittest.TestCase):
 
         # Verify that the data is inserted into the Forecast table
         forecasts = Forecast.query.all()
-        self.assertEqual(len(forecasts), 1)  # Adjust based on the number of forecasts in the mock data
-        self.assertEqual(forecasts[0].city_id, 1)  # Adjust based on the mock data
+        self.assertEqual(len(forecasts), 1)  # Adjust based on the number of forecast
+        self.assertEqual(forecasts[0].city_id, 1)  # Adjust 
 
     @patch('scripts.fetch_and_populate_forecasts.requests.get')
     def test_fetch_and_populate_forecasts_failure(self, mock_requests_get):
