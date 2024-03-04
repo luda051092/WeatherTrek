@@ -12,7 +12,7 @@ def get_city_data(api_key, city_name):
         return None
 
 # Usage
-api_key = "YOUR_OPENWEATHERMAP_API_KEY"
+api_key = "KEY"
 city_name = input("Enter the city name: ")
 city_data = get_city_data(api_key, city_name)
 
