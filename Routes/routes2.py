@@ -4,7 +4,7 @@ from user_management import register_user, get_user_details, add_comment
 
 app = Flask(__name__)
 
-WEATHER_API_KEY = 'KUbafkNI9CBq2ANGiX08DrEE6B0wCLuz'
+WEATHER_API_KEY = ''
 WEATHER_API_URL = 'https://api.tomorrow.io/v4/weather/realtime'
 
 @app.route('/current_weather')
