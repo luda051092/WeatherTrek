@@ -4,9 +4,9 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db' 
+app.config['SQLALCHEMY_DATABASE_URI'] = ' 
 
-WEATHER_API_KEY = 'KUbafkNI9CBq2ANGiX08DrEE6B0wCLuz'
+WEATHER_API_KEY = ''
 WEATHER_API_URL = 'https://api.tomorrow.io/v4/weather/realtime'
 
 @app.route('/current_weather')
